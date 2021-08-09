@@ -1,0 +1,19 @@
+.formWrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.labelCryptoSearch{
+  font-family: orbitron;
+  font-size: 20px;
+}
+
+#cryptoSearch{
+  font-family: orbitron;
+  font-size: 18px;
+}
+
+.searchBtn{
+  font-family: orbitron;
+  font-size: 16px; 
+}
