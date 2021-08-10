@@ -10,20 +10,29 @@
   <title>API Project 2</title>
 </head>
 <body>
+  <div id='wrapper'>
 <h1 class='display-1'>Live Cypto Rates</h1>
 <form class>
   <div class='formWrapper'>
   <label class='labelCryptoSearch' for="cryptoSearch">Enter a Cryptocurrency ticker and get instant rates in USD</label>
   <br>
-  <input  type="search" id='cryptoSearch' name='cryptoSearch'placeholder='Enter Crypto Ticker'>
+  <input  type="search" id='cryptoSearch' name='cryptoSearch'placeholder='Enter Crypto Ticker (Must be in ALL CAPS)'>
   <br>
-  <button class='searchBtn'>GET RATES</button>
+  <button id='searchBtn' type='button'>GET RATES</button>
+  <button id='refreshBtn' onClick="window.location.reload();">Clear Search Results</button>
 </div>
 </form>
+</div>
 
+<div id='rateDisplay'>
+  <ul id='myList'>
 
+  </ul>
+</div>
 
+<img src="https://cryptomode.com/wp-content/uploads/2018/08/Full-Crypto-List.jpg" alt="Not Avalible">
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+<script src='./apiTwo.js'></script>
 </body>
 </html>

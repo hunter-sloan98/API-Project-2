@@ -1,19 +1,36 @@
 .formWrapper{
-  display: flex;
-  justify-content: center;
+  display:flex;
+  justify-content: right;
+  flex-direction: column;
+  padding-top: 5%;
 }
 
 .labelCryptoSearch{
+  text-align: center;
   font-family: orbitron;
-  font-size: 20px;
+  font-size: 30px;
+  color:black;
+  
 }
 
 #cryptoSearch{
   font-family: orbitron;
   font-size: 18px;
+  /* width: 50%; */
 }
 
-.searchBtn{
+#searchBtn{
+  font-family: orbitron;
+  font-size: 16px;
+  height: 40px; 
+  color:white;
+  background-color: green;
+}
+
+#refreshBtn{
   font-family: orbitron;
   font-size: 16px; 
+  height: 40px;
+  color: white;
+  background-color: red;
 }
